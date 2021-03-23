@@ -1,0 +1,33 @@
+/*TAGS*/
+
+body{
+    background-color: $negro;
+
+    @include tablet{
+        background-color: unset;
+        background-image: url(../img/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+    }
+}
+
+a{
+    color: $gris;
+    text-decoration: none;
+
+    a:hover{
+        text-decoration: underline;
+    }
+}
+
+select{
+    appearance: none;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    text-transform: uppercase;
+}
+
+/*END TAGS*/

@@ -1,0 +1,68 @@
+/*tools mixins*/
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculate-rem($size);
+    
+}
+
+@mixin color-boton($bgColor, $color){
+    background-color: $bgColor;
+    color: $color;
+
+}
+@mixin box-sizing($box-model){
+    box-sizing: $box-model;
+}
+
+@mixin telefono(){
+    @media ( min-width:#{telefono}){
+        @content;
+    }
+}
+
+@mixin tablet(){
+    @media ( min-width:#{$tablet}){
+        @content;
+    }
+}
+
+@mixin desktop(){
+    @media ( min-width:#{$desktop}){
+        @content;
+    }
+}
+
+///////////proyecto carrito
+
+@mixin sm() {
+    
+    @media (min-width: 501px){
+        @content;
+    }
+}
+
+@mixin md() {
+    
+    @media (min-width: 1101px){
+        @content;
+    }
+}
+
+//range
+@mixin only-xs() {
+    
+    @media (min-width: 0px) and (max-width: 500px){
+        @content;
+    }
+
+
+}
+
+@mixin only-sm() {
+    @media (min-width: 501px) and (max-width: 1100px){
+        @content;
+    }
+}
+
+/*end tools mixins*/

@@ -1,0 +1,24 @@
+/*object container*/
+
+.container{
+    max-width: 90%;
+    width: 1200px;
+    display: block;
+    margin: 0 auto;
+
+
+
+    @include tablet{
+        &--m{
+            max-width: 50%; 
+            width: 1200px;
+            display: block;
+            margin: 0 auto;        
+        }
+    }
+
+}
+
+
+
+/*end object container*/

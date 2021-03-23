@@ -1,0 +1,22 @@
+/*object color*/
+
+.color{
+
+    &-blue{
+        color: blue;
+
+        &:hover{
+            color: darkblue;
+        }
+    }
+
+    &-primary{
+        color: $color-primary;
+    }
+
+    &-secundary{
+        color: $color-secundary;
+    }
+}
+
+/*end object color*/
